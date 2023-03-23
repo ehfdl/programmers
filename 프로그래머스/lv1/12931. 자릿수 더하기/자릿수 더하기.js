@@ -1,7 +1,5 @@
 function solution(n){
-    let answer = String(n)
-    answer = answer.split("")
-    let ans = answer.map((a) => Number(a))
-    let result = ans.reduce((a,b) => a+b);
-    return result;
+    let answer = String(n).split("").map((a) => Number(a)).reduce((a,b) => a+b);
+    
+    return answer;
 }
